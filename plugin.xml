@@ -21,6 +21,8 @@
             </feature>
         </config-file>
  
-        <source-file src="src/android/PGLowLatencyAudio.java" target-dir="src/com/phonegap" />      
+        <source-file src="src/android/PGLowLatencyAudio.java" target-dir="src/com/phonegap" />  
+        <source-file src="src/android/PGLowLatencyAudioAsset.java" target-dir="src/com/phonegap" />  
+        <source-file src="src/android/PGPolyphonicVoice.java" target-dir="src/com/phonegap" />   
      </platform>          
 </plugin>
