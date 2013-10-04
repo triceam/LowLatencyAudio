@@ -9,14 +9,14 @@
     <keywords>phonegap,audio</keywords>
  
  
-    <js-module src="www/LowLatencyAudio.js" name="Calendar">
-        <clobbers target="LowLatencyAudio" />
+    <js-module src="www/LowLatencyAudio.js" name="LowLatencyAudio">
+        <clobbers target="" />
     </js-module>
  
     <!-- android -->
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
-            <feature name="LowLatencyAudio">
+            <feature name="window.LowLatencyAudio">
                 <param name="android-package" value="com.phonegap.PGLowLatencyAudio"/>
             </feature>
         </config-file>
