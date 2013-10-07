@@ -11,13 +11,11 @@ The LowLatencyAudio plugin can be added to your project via the PhoneGap command
 
 ## Usage
 
-Usage:
-1) Preload the audio asset
-    Note: Make sure to wait for phonegap deviceready event before atteptimpting to load assets
-2) Play the audio asset
-3) When done, unload the audio asset
+1. Preload the audio asset - Note: Make sure to wait for phonegap deviceready event before atteptimpting to load assets
+2. Play the audio asset
+3. When done, unload the audio asset
 
-API methods:
+## API methods
 preloadFX: function ( id, assetPath, success, fail)
 	params: ID - string unique ID for the audio file
 			assetPath - the relative path to the audio asset within the www directory
