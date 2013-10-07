@@ -29,7 +29,7 @@
      
     <!-- ios -->
     <platform name="ios">
-        <config-file target="LowLatencyAudio" parent="/*">
+        <config-file target="config.xml" parent="/*">
             <feature name="LowLatencyAudio">
                 <param name="ios-package" value="LowLatencyAudio"/>
             </feature>
@@ -39,5 +39,5 @@
         <source-file src="src/ios/LowLatencyAudio.m" />
         <header-file src="src/ios/LowLatencyAudioAsset.h" />
         <source-file src="src/ios/LowLatencyAudioAsset.m" />
-    </platform>      
+    </platform>  
 </plugin>
