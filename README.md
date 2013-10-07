@@ -16,7 +16,7 @@ The LowLatencyAudio plugin can be added to your project via the PhoneGap command
 3. When done, unload the audio asset
 
 ## API methods
-preloadFX: function ( id, assetPath, success, fail)
+`preloadFX: function ( id, assetPath, success, fail)
 	params: ID - string unique ID for the audio file
 			assetPath - the relative path to the audio asset within the www directory
 			success - success callback function
@@ -59,7 +59,7 @@ unload: function (id, success, fail)
 			success - success callback function
 			fail - error/fail callback function
 	detail:	
-			Unloads an audio file from memory
+			Unloads an audio file from memory`
 
 
 ## License
