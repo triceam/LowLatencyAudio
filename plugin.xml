@@ -24,5 +24,20 @@
         <source-file src="src/android/PGLowLatencyAudio.java" target-dir="src/com/phonegap" />  
         <source-file src="src/android/PGLowLatencyAudioAsset.java" target-dir="src/com/phonegap" />  
         <source-file src="src/android/PGPolyphonicVoice.java" target-dir="src/com/phonegap" />   
-     </platform>          
+     </platform>    
+     
+     
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="LowLatencyAudio" parent="/*">
+            <feature name="LowLatencyAudio">
+                <param name="ios-package" value="LowLatencyAudio"/>
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/LowLatencyAudio.h" />
+        <source-file src="src/ios/LowLatencyAudio.m" />
+        <header-file src="src/ios/LowLatencyAudioAsset.h" />
+        <source-file src="src/ios/LowLatencyAudioAsset.m" />
+    </platform>      
 </plugin>
