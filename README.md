@@ -16,50 +16,50 @@ The LowLatencyAudio plugin can be added to your project via the PhoneGap command
 3. When done, unload the audio asset
 
 ## API methods
-`preloadFX: function ( id, assetPath, success, fail)
-	params: ID - string unique ID for the audio file
-			assetPath - the relative path to the audio asset within the www directory
-			success - success callback function
-			fail - error/fail callback function
-	detail:	
-			The preloadFX function loads an audio file into memory.  Assets that are loaded using preloadFX are managed/played using AudioServices methods from the AudioToolbox framework.   These are very low-level audio methods and have minimal overhead.  Audio loaded using this function is played using AudioServicesPlaySystemSound.   These assets should be short, and are not intended to be looped or stopped.   They are fully concurrent and polyphonic.
+	preloadFX: function ( id, assetPath, success, fail)
+		params: ID - string unique ID for the audio file
+				assetPath - the relative path to the audio asset within the www directory
+				success - success callback function
+				fail - error/fail callback function
+		detail:	
+				The preloadFX function loads an audio file into memory.  Assets that are loaded using preloadFX are managed/played using AudioServices methods from the AudioToolbox framework.   These are very low-level audio methods and have minimal overhead.  Audio loaded using this function is played using AudioServicesPlaySystemSound.   These assets should be short, and are not intended to be looped or stopped.   They are fully concurrent and polyphonic.
 			
-preloadAudio: function ( id, assetPath, voices, success, fail) 
-	params: ID - string unique ID for the audio file
-			assetPath - the relative path to the audio asset within the www directory
-			voices - the number of polyphonic voices available
-			success - success callback function
-			fail - error/fail callback function
-	detail:	
-			The preloadAudio function loads an audio file into memory.  Assets that are loaded using preloadAudio are managed/played using AVAudioPlayer.   These have more overhead than assets laoded via preloadFX, and can be looped/stopped.   By default, there is a single "voice" - only one instance that will be stopped & restarted when you hit play.  If there are multiple voices (number greater than 0), it will cycle through voices to play overlapping audio.
+	preloadAudio: function ( id, assetPath, voices, success, fail) 
+		params: ID - string unique ID for the audio file
+				assetPath - the relative path to the audio asset within the www directory
+				voices - the number of polyphonic voices available
+				success - success callback function
+				fail - error/fail callback function
+		detail:	
+				The preloadAudio function loads an audio file into memory.  Assets that are loaded using preloadAudio are managed/played using AVAudioPlayer.   These have more overhead than assets laoded via preloadFX, and can be looped/stopped.   By default, there is a single "voice" - only one instance that will be stopped & restarted when you hit play.  If there are multiple voices (number greater than 0), it will cycle through voices to play overlapping audio.
 		
-play: function (id, success, fail) 	
-	params: ID - string unique ID for the audio file
-			success - success callback function
-			fail - error/fail callback function
-	detail:	
-			Plays an audio asset
+	play: function (id, success, fail) 	
+		params: ID - string unique ID for the audio file
+				success - success callback function
+				fail - error/fail callback function
+		detail:	
+				Plays an audio asset
 		
-loop: function (id, success, fail) 	
-	params: ID - string unique ID for the audio file
-			success - success callback function
-			fail - error/fail callback function
-	detail:	
-			Loops an audio asset infinitely - this only works for assets loaded via preloadAudio
+	loop: function (id, success, fail) 	
+		params: ID - string unique ID for the audio file
+				success - success callback function
+				fail - error/fail callback function
+		detail:	
+				Loops an audio asset infinitely - this only works for assets loaded via preloadAudio
 		
-stop: function (id, success, fail) 	
-	params: ID - string unique ID for the audio file
-			success - success callback function
-			fail - error/fail callback function
-	detail:	
-			Stops an audio file - this only works for assets loaded via preloadAudio
+	stop: function (id, success, fail) 	
+		params: ID - string unique ID for the audio file
+				success - success callback function
+				fail - error/fail callback function
+		detail:	
+				Stops an audio file - this only works for assets loaded via preloadAudio
 		
-unload: function (id, success, fail) 	
-	params: ID - string unique ID for the audio file
-			success - success callback function
-			fail - error/fail callback function
-	detail:	
-			Unloads an audio file from memory`
+	unload: function (id, success, fail) 	
+		params: ID - string unique ID for the audio file
+				success - success callback function
+				fail - error/fail callback function
+		detail:	
+				Unloads an audio file from memory
 
 
 ## License
